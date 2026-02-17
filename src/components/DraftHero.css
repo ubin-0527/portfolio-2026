@@ -1,0 +1,92 @@
+.draft-hero {
+  padding: var(--space-xl) 0;
+}
+
+.draft-hero__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 48px;
+}
+
+.draft-hero__content {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  /* Use explicit margins for spacing instead of a generic gap */
+  gap: 0;
+}
+
+/* Category */
+.draft-hero__category {
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: 300;
+  color: #1F1F1F;
+  margin: 0; /* no space above/below relative to title/timeframe */
+}
+
+/* Title */
+.draft-hero__title {
+  font-size: 94px;
+  line-height: 98px;
+  font-weight: 300;
+  color: #1F1F1F;
+  margin: 0; /* no space above/below relative to category/timeframe */
+}
+
+/* Timeframe */
+.draft-hero__timeframe {
+  font-size: 30px;
+  line-height: 34px;
+  font-weight: 300;
+  color: #1F1F1F;
+  margin: 0; /* no space between title and timeframe */
+}
+
+/* Tags */
+.draft-hero__tags {
+  display: flex;
+  gap: var(--space-sm);
+  padding: 0;
+  margin: 16px 0 0; /* 16px below timeframe, no extra bottom spacing */
+  list-style: none;
+}
+
+.draft-hero__tag {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: var(--text-xs);
+  background: #f2f2f2;
+}
+
+/* Description */
+.draft-hero__description {
+  max-width: 60ch;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #1F1F1F;
+  margin-top: 56px; /* 56px below tags */
+}
+
+/* Buttons */
+.draft-hero__actions {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: 56px; /* 56px below description */
+}
+
+/* Right-side image */
+.draft-hero__image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.draft-hero__image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+

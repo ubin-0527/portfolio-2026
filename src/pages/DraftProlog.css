@@ -1,0 +1,14 @@
+.draft-prolog-page {
+  /* Centered column with max 1440px width */
+  max-width: 1440px;
+  min-height: 4000px;
+  margin: 0 auto;
+  padding: 0 24px; /* small side padding so content doesn't touch edges on small screens */
+  box-sizing: border-box;
+}
+
+.draft-prolog-page__content {
+  /* Stack main content under the back button */
+  margin-top: 24px;
+}
+

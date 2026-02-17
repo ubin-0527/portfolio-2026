@@ -1,0 +1,47 @@
+:root {
+    /* Colors */
+    --color-bg: #F7F8FB;
+    --color-text: #343434;
+    --color-primary: #00563F;
+  
+    /* Typography */
+    --font-primary: "Stack Sans Headline", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+    --text-xs: clamp(0.75rem, 0.9vw, 0.875rem);
+    --text-sm: clamp(0.875rem, 1vw, 1rem);
+    --text-base: clamp(1rem, 1.2vw, 1.125rem);
+    --text-lg: clamp(1.25rem, 2vw, 1.5rem);
+    --text-xl: clamp(2rem, 4vw, 3rem);
+
+    --line-height-offset: 4px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-primary);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+}
+
+h1 {
+    font-size: var(--text-xl);
+    font-weight: 700;
+  }
+  
+  h2 {
+    font-size: var(--text-lg);
+    font-weight: 600;
+  }
+  
+  p {
+    font-size: var(--text-base);
+    color: var(--color-text);
+  }
+  

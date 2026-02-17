@@ -1,0 +1,49 @@
+.btn {
+
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 999px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease;
+    color: white;
+  }
+
+  /* Icon only button */
+.btn-icon-only {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background:  var(--color-primary);
+  }
+  
+  .btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Variants */
+  .btn-primary {
+    background:  var(--color-primary);
+    color: white;
+  }
+  
+  .btn-secondary {
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+  }
+  
+  .btn-ghost {
+    background: none;
+    color: black;
+    padding: 8px 0;
+  }
+  
+  /* Hover */
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
