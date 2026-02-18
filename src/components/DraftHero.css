@@ -100,7 +100,7 @@
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease;
   font-family: var(--font-primary);
-  font-weight: 50;
+  font-weight: 200;
   font-size: 30px;
   line-height: 34px;
 }

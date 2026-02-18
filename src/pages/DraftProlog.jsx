@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Navbar from "../components/Navbar";
 import BackButton from "../components/BackButton";
 import DraftHero from "../components/DraftHero";
 import DraftSummary from "../components/DraftSummary";
@@ -44,6 +45,7 @@ function DraftProlog() {
 
   return (
     <div className="draft-prolog-page">
+      <Navbar />
       <section className="draft-prolog-bleed">
         <BackButton />
         <div className="draft-prolog-page__content">
