@@ -73,7 +73,7 @@
 /* Buttons */
 .draft-hero__actions {
   display: flex;
-  gap: var(--space-md);
+  gap: 20px;
   margin-top: 56px; /* 56px below description */
 }
 

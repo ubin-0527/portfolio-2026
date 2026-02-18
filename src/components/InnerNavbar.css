@@ -1,0 +1,65 @@
+.inner-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 16px 0;
+  width: 100%;
+  gap: 32px;
+}
+
+.inner-navbar__button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-navbar__button-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.inner-navbar__button:hover .inner-navbar__button-circle {
+  transform: scale(1.05);
+}
+
+.inner-navbar__button:active .inner-navbar__button-circle {
+  transform: scale(0.95);
+}
+
+.inner-navbar__icon {
+  color: #2D5016; /* Dark green color */
+}
+
+.inner-navbar__center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+}
+
+.inner-navbar__step {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2D5016; /* Dark green color */
+  line-height: 1.2;
+}
+
+.inner-navbar__title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #2D5016; /* Dark green color */
+  line-height: 1.2;
+}

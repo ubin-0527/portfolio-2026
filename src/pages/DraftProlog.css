@@ -12,3 +12,49 @@
   margin-top: 24px;
 }
 
+/* Hero and Summary: same horizontal band as step PNGs (60px from viewport) */
+.draft-prolog-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+
+/* Spacing between hero buttons and DraftSummary */
+.draft-prolog-section-summary {
+  margin-top: 80px;
+}
+
+/* Wrapper breaks out of container and adds 60px horizontal spacing */
+.draft-prolog-fullbleed-wrapper {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+
+.draft-prolog-fullbleed-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 24px;
+}
+
+/* Section title above inner navbar (pill style to match section-title.png) */
+.draft-prolog-section-title {
+  margin: 104px 0 16px 0;
+  padding: 12px 24px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  background-color: var(--color-bg);
+  color: var(--color-primary);
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: inherit;
+  text-align: center;
+  border: none;
+  border-radius: 9999px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
