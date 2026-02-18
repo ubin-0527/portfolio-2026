@@ -42,8 +42,11 @@ function DraftHero({ project }) {
           <div className="draft-hero__actions">
             {links?.prototype && (
               <Button
-                variant="primary"
+                variant="link"
+                className="btn--step-style"
                 onClick={() => window.open(links.prototype, "_blank")}
+                icon={<Icon name="link_2" size={40} weight={50} />}
+                iconPosition="left"
               >
                 Prototype
               </Button>
@@ -51,8 +54,11 @@ function DraftHero({ project }) {
 
             {links?.github && (
               <Button
-                variant="secondary"
+                variant="link"
+                className="btn--step-style"
                 onClick={() => window.open(links.github, "_blank")}
+                icon={<Icon name="link_2" size={40} weight={50} />}
+                iconPosition="left"
               >
                 GitHub
               </Button>
