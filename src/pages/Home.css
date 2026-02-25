@@ -1,0 +1,221 @@
+/* Remove white top/bottom: paint body when Home is active */
+body.home-page-active {
+  background-color: #100101;
+}
+
+.home-page {
+  background-color: #100101;
+  min-height: 100vh;
+}
+
+.home-page__hero {
+  padding: 272px 104px 0;
+  box-sizing: border-box;
+}
+
+.home-page__hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: top;
+}
+
+/* About-me section: same horizontal spacing as hero, image full width */
+.about-me-section {
+  position: relative;
+  padding: 0 104px;
+  box-sizing: border-box;
+}
+
+.about-me-section__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: top;
+}
+
+/* Text container: 610×776 at 100% scale, positioned relative to image; scales with section */
+.about-me-section__text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  aspect-ratio: 610 / 776;
+  max-width: 610px;
+  max-height: 776px;
+  padding: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-me-section__body,
+.about-me-section__page {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+  line-height: 2;
+  margin: 0;
+}
+
+.about-me-section__page {
+  margin-top: auto;
+}
+
+/* Home footer: contact info */
+.home-footer {
+  padding: 48px 104px 32px;
+  margin-top: 80px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.home-footer__inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.home-footer__title {
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 8px 0;
+}
+
+.home-footer__subtitle {
+  font-family: var(--font-primary);
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 4px 0;
+}
+
+.home-footer__row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-primary);
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0 0 8px 0;
+}
+
+.home-footer__icon {
+  color: rgba(255, 255, 255, 0.85);
+  flex-shrink: 0;
+}
+
+.home-footer__btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 500;
+  color: #100101;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  width: fit-content;
+  transition: opacity 0.2s;
+}
+
+.home-footer__btn:hover {
+  opacity: 0.9;
+}
+
+/* Projects section: 104px below hero, same horizontal spacing */
+.projects-section {
+  margin-top: 104px;
+  padding: 0 104px;
+  box-sizing: border-box;
+}
+
+.projects-section__row {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.projects-section__row--top {
+  align-items: flex-end;
+}
+
+.projects-section__row--bottom {
+  align-items: flex-start;
+  margin-top: 0;
+}
+
+.projects-section__row + .projects-section__row {
+  margin-top: 16px;
+}
+
+.projects-section__btn {
+  flex: 1;
+  max-width: 50%;
+  display: block;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background: none;
+  text-decoration: none;
+}
+
+.projects-section__btn--disabled {
+  cursor: pointer; /* show pointer so tooltip still appears */
+}
+
+.projects-section__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* Hide default cursor when tooltip (white box) is visible */
+body.home-tooltip-visible {
+  cursor: none;
+}
+
+body.home-tooltip-visible .projects-section__btn {
+  cursor: none;
+}
+
+/* Tooltip: small white box following cursor with project description */
+.home-tooltip {
+  position: fixed;
+  z-index: 9999;
+  padding: 32px 24px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+  transform: translate(0, 0);
+  width: 400px;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.home-tooltip__category,
+.home-tooltip__timeframe {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  line-height: 1.3;
+  color: #636363;
+}
+
+.home-tooltip__title {
+  font-family: var(--font-primary);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #1F1F1F;
+}
