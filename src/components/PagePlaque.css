@@ -1,0 +1,114 @@
+/* Outer: handles only fixed positioning — never animated */
+.page-plaque {
+  width: 216px;
+  height: 450px;
+  position: fixed;
+  left: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+
+/* Inner: handles only animation — never repositioned */
+.page-plaque__animator {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  will-change: transform, opacity;
+}
+
+.page-plaque__animator--hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-150%);
+}
+
+.page-plaque__glass {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.page-plaque__circle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #000000;
+  box-shadow: var(--shadow-glow);
+  z-index: 4;
+}
+
+.page-plaque__circle--tl { top: 20px;  left: 10px;  }
+.page-plaque__circle--tr { top: 20px;  right: 10px; }
+.page-plaque__circle--bl { bottom: 20px; left: 10px;  }
+.page-plaque__circle--br { bottom: 20px; right: 10px; }
+
+.page-plaque__label {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.page-plaque__floor {
+  font-family: var(--font-primary);
+  font-weight: 100;
+  font-size: 24px;
+  letter-spacing: 0.12em;
+  color: #f7f8fb;
+}
+
+.page-plaque__title {
+  font-family: var(--font-primary);
+  font-weight: 200;
+  font-size: 24px;
+  letter-spacing: 0.16em;
+  color: #f7f8fb;
+}
+
+.page-plaque__bg {
+  width: 180px;
+  height: 367px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.page-plaque__box {
+  background-color: #ffffff;
+  height: 367px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  box-shadow: var(--shadow-glow);
+}
+
+.page-plaque__box--1 {
+  width: 6px;
+  margin-right: 10px;
+}
+
+.page-plaque__box--2 {
+  width: 4px;
+  margin-right: 140px;
+}
+
+.page-plaque__box--3 {
+  width: 6px;
+  margin-right: 10px;
+}
+
+.page-plaque__box--4 {
+  width: 4px;
+}

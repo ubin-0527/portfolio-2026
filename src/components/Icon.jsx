@@ -8,7 +8,7 @@ function Icon({
         className={`material-symbols-outlined ${className}`}
         style={{ 
             fontSize: size,
-            fontVariationSettings: `'wght' ${weight}`,
+            fontVariationSettings: `'FILL' 0, 'wght' ${weight}, 'GRAD' 0, 'opsz' ${size}`,
         }}
         aria-hidden="true"
       >

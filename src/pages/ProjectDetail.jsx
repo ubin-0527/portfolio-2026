@@ -16,7 +16,6 @@ function ProjectDetail() {
   }
 
   return (
-      
       <div>
         <BackButton/>
         <div>
@@ -28,7 +27,6 @@ function ProjectDetail() {
         <img src={project.heroImage} alt={project.title} />
         </div>
       </div>
-
   );
 }
 

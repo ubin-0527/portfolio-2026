@@ -1,0 +1,74 @@
+.nav-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.nav-btn__icon {
+  font-size: 24px;
+  color: #747474;
+  text-shadow: 2px 2px 0px #2e2e2e;
+}
+
+.nav-btn__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.nav-btn__floor {
+  font-family: "Stack Sans Headline", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 16%;
+  color: #747474;
+  white-space: nowrap;
+  text-shadow: 2px 2px 0px #2e2e2e;
+}
+
+.nav-btn__label {
+  font-family: "Stack Sans Headline", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 16%;
+  color: #747474;
+  white-space: nowrap;
+  text-shadow: 2px 2px 0px #2e2e2e;
+}
+
+.nav-btn__floor,
+.nav-btn__label,
+.nav-btn__icon {
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+/* SideNavBar hover/active */
+.nav-btn:not(.nav-btn--compact):hover .nav-btn__floor,
+.nav-btn:not(.nav-btn--compact):hover .nav-btn__label,
+.nav-btn:not(.nav-btn--compact):hover .nav-btn__icon,
+.nav-btn--active:not(.nav-btn--compact) .nav-btn__floor,
+.nav-btn--active:not(.nav-btn--compact) .nav-btn__label,
+.nav-btn--active:not(.nav-btn--compact) .nav-btn__icon {
+  color: #ffffff;
+  text-shadow:
+    -1px -1px 2px #BEAF92,
+     1px  1px 2px #BEAF92,
+    -1px -1px 10px #8c8c8c,
+     2px  2px 10px #8c8c8c;
+}
+
+/* TopNavBar compact hover/active — add your styles here */
+.nav-btn--compact:hover .nav-btn__floor,
+.nav-btn--compact:hover .nav-btn__icon,
+.nav-btn--active.nav-btn--compact .nav-btn__floor,
+.nav-btn--active.nav-btn--compact .nav-btn__icon {
+  color: #ffffff;
+}

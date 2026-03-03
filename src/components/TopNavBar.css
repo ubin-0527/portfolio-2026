@@ -1,0 +1,59 @@
+.top-navbar {
+  position: fixed;
+  top: var(--top-navbar-offset);
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  z-index: 100;
+}
+
+.top-navbar__fullscreen {
+  flex-shrink: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-navbar__fullscreen-icon {
+  color: #747474;
+  transition: color 0.3s ease;
+}
+
+.top-navbar__fullscreen--active .top-navbar__fullscreen-icon {
+  color: #f7f8fb;
+}
+
+/* Takes all remaining space; NavButton sits at far right */
+.top-navbar__content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.top-navbar__content--hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-20px);
+}
+
+/* Always positions relative to the fixed header — never inside a transformed parent */
+.top-navbar__logo {
+  position: absolute;
+  left: 50%;
+  width: 56px;
+  transform: translateX(-50%);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.top-navbar__logo--hidden {
+  opacity: 0;
+  transform: translateX(-50%) translateY(-20px);
+}

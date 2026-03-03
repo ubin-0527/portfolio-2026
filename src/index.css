@@ -1,8 +1,13 @@
 :root {
     /* Colors */
-    --color-bg: #F7F8FB;
     --color-text: #343434;
     --color-primary: #00563F;
+
+    /* Layout */
+    --top-navbar-offset: 3rem;
+
+    /* Shadows */
+    --shadow-glow: -2px -2px 4px #BEAF92, 2px 2px 4px #BEAF92, -4px -4px 20px #EDEDED, 4px 4px 20px #EDEDED;
   
     /* Typography */
     --font-primary: "Stack Sans Headline", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
@@ -44,4 +49,19 @@ h1 {
     font-size: var(--text-base);
     color: var(--color-text);
   }
+
+.glass {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.25),
+    rgba(255, 255, 255, 0.05)
+  );
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-radius: 2px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.2),
+    inset 0 1px 1px rgba(255, 255, 255, 0.4);
+}
   

@@ -1,0 +1,39 @@
+/* Outer: handles only fixed positioning — never animated */
+.side-navbar {
+  position: fixed;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+}
+
+/* Inner: handles only animation — never repositioned */
+.side-navbar__animator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.5rem;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  will-change: transform, opacity;
+}
+
+.side-navbar__animator--hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(150%);
+}
+
+.side-navbar__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.side-navbar__bar {
+  width: 216px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  box-shadow: var(--shadow-glow);
+}
