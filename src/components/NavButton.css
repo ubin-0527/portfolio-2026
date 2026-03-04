@@ -59,8 +59,8 @@
 .nav-btn--active:not(.nav-btn--compact) .nav-btn__icon {
   color: #ffffff;
   text-shadow:
-    -1px -1px 2px #BEAF92,
-     1px  1px 2px #BEAF92,
+    -1px -1px 2px #B7C4C4,
+     1px  1px 2px #B7C4C4,
     -1px -1px 10px #8c8c8c,
      2px  2px 10px #8c8c8c;
 }

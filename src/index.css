@@ -7,7 +7,7 @@
     --top-navbar-offset: 3rem;
 
     /* Shadows */
-    --shadow-glow: -2px -2px 4px #BEAF92, 2px 2px 4px #BEAF92, -4px -4px 20px #EDEDED, 4px 4px 20px #EDEDED;
+    --shadow-glow: -2px -2px 4px #B7C4C4, 2px 2px 4px #B7C4C4, -4px -4px 20px #EDEDED, 4px 4px 20px #EDEDED;
   
     /* Typography */
     --font-primary: "Stack Sans Headline", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
