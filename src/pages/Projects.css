@@ -1,0 +1,30 @@
+.projects-page {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100dvh;
+}
+
+.projects-stack {
+  display: grid;
+  width: 480px;
+  text-decoration: none;
+}
+
+.projects-stack__img {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  height: auto;
+  cursor: none;
+}
+
+.projects-cursor {
+  position: fixed;
+  width: 435px;
+  height: auto;
+  pointer-events: none;
+  transform: translate(0, -50%);
+  z-index: 9999;
+}
+
