@@ -21,7 +21,7 @@
 
 .projects-cursor {
   position: fixed;
-  width: 435px;
+  width: 320px;
   height: auto;
   pointer-events: none;
   transform: translate(0, -50%);

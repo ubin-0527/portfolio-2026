@@ -5,5 +5,7 @@ html, body {
 }
 
 html {
-  background-color: #02060C;
+  background: linear-gradient(180deg, #161718 0%, #000000 65%, #2A2B2C 100%);
+  background-attachment: fixed;
+  min-height: 100%;
 }
