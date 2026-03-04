@@ -1,0 +1,49 @@
+.devprocess-section {
+  width: 1144px;
+  margin: 72px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Same title style as OverviewSection */
+.devprocess-section__heading {
+  font-family: var(--font-primary);
+  font-weight: 200;
+  font-size: 40px;
+  line-height: 44px;
+  color: #636363;
+  margin: 0;
+  text-align: left;
+}
+
+.devprocess-section__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 72px;
+}
+
+.devprocess-section__tab {
+  background: none;
+  border-top: none;
+  border-bottom: none;
+  cursor: pointer;
+  font-family: var(--font-primary);
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--color-text);
+  padding: 16px 72px;
+  white-space: nowrap;
+}
+
+.devprocess-section__tab:hover,
+.devprocess-section__tab--active {
+  font-weight: 500;
+}
+
+.devprocess-section__content {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+}

@@ -1,0 +1,23 @@
+.tab-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.tab-header__step {
+  font-family: var(--font-primary);
+  font-weight: 200;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.tab-header__name {
+  font-family: var(--font-primary);
+  font-weight: 200;
+  font-size: 32px;
+  line-height: 36px;
+  color: var(--color-text);
+  margin: 0;
+}

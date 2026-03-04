@@ -2,6 +2,7 @@ import "./Prolog.css";
 import HeroSection from "../components/project/HeroSection";
 import GallerySection from "../components/project/GallerySection";
 import OverviewSection from "../components/project/OverviewSection";
+import DevProcessSection from "../components/project/DevProcessSection";
 import heroData from "../data/hero";
 import galleryData from "../data/gallery";
 import overviewData from "../data/overview";
@@ -22,6 +23,7 @@ function Prolog() {
       />
       <GallerySection images={galleryData.prolog} />
       <OverviewSection {...overviewData.prolog} />
+      <DevProcessSection />
     </div>
   );
 }
