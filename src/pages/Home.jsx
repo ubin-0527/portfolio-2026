@@ -1,5 +1,5 @@
 import "./Home.css";
-import cube from "../assets/home/cube.png";
+import cube from "../assets/home/box.png";
 
 function Home() {
   return (

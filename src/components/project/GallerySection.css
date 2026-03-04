@@ -1,0 +1,33 @@
+.gallery-section {
+  height: 100dvh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.gallery-section__track {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 100%;
+  align-items: center;
+  padding: 0 32px;
+  scrollbar-width: none;
+}
+
+.gallery-section__track::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-section__item {
+  flex-shrink: 0;
+  width: 80%;
+}
+
+.gallery-section__item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

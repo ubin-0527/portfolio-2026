@@ -1,0 +1,4 @@
+.prolog-page {
+  min-height: 100dvh;
+  background: radial-gradient(ellipse at center, #ffffff 0%, #ebebeb 100%);
+}
