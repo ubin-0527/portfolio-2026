@@ -57,3 +57,37 @@
   opacity: 0;
   transform: translateX(-50%) translateY(-20px);
 }
+
+.top-navbar__contact {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 24px;
+  text-decoration: none;
+  z-index: 100;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.top-navbar__contact--hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-50%) translateY(20px);
+}
+
+.top-navbar__contact-text {
+  font-family: var(--font-primary);
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 16px;
+  color: white;
+}
+
+.top-navbar__contact-arrow {
+  height: 10px;
+  width: auto;
+}

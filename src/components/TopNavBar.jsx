@@ -1,7 +1,8 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import Icon from "./Icon";
 import NavButton from "./NavButton";
 import logo from "../assets/home/uj-logo.svg";
+import longArrow from "../assets/long-arrow.svg";
 import "./TopNavBar.css";
 
 const floorMap = {
@@ -38,6 +39,10 @@ function TopNavBar({ contentVisible = true, onToggleFullscreen, onToggleSideNav 
           compact
         />
       </div>
+      <Link to="/about" className={`top-navbar__contact${contentVisible ? "" : " top-navbar__contact--hidden"}`}>
+        <span className="top-navbar__contact-text">Contact Info</span>
+        <img src={longArrow} alt="" aria-hidden="true" className="top-navbar__contact-arrow" />
+      </Link>
     </header>
   );
 }

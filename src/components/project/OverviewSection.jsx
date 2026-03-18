@@ -1,6 +1,31 @@
+import { useState, useEffect } from "react";
 import "./OverviewSection.css";
 
 function OverviewSection({ objective, role, contributions, images }) {
+  const [currentIndex, setCurrentIndex]       = useState(0);
+  const [transitionState, setTransitionState] = useState("idle");
+
+  useEffect(() => {
+    if (!images || images.length <= 1) return;
+
+    const interval = setInterval(() => {
+      setTransitionState("exiting");
+
+      setTimeout(() => {
+        setCurrentIndex((prev) => (prev + 1) % images.length);
+        setTransitionState("entering");
+
+        setTimeout(() => setTransitionState("idle"), 500);
+      }, 500);
+    }, 3500);
+
+    return () => clearInterval(interval);
+  }, [images]);
+
+  const animClass =
+    transitionState === "exiting"  ? "overview-section__image--exiting"  :
+    transitionState === "entering" ? "overview-section__image--entering" : "";
+
   return (
     <section className="overview-section">
 
@@ -32,12 +57,12 @@ function OverviewSection({ objective, role, contributions, images }) {
         </div>
 
         <div className="overview-section__right">
-          {/* Carousel — effect coming later */}
-          {images?.[0] && (
+          {images?.[currentIndex] && (
             <img
-              src={images[0].src}
-              alt={images[0].alt}
-              className="overview-section__image"
+              key={currentIndex}
+              src={images[currentIndex].src}
+              alt={images[currentIndex].alt}
+              className={`overview-section__image ${animClass}`}
             />
           )}
         </div>
