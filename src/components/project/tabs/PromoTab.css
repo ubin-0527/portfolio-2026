@@ -1,0 +1,27 @@
+.promo-tab {
+  width: 100vw;
+  padding: 80px 148px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.promo-tab__subsections {
+  width: 100%;
+}
+
+.promo-tab__video {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  padding-bottom: 72px;
+}
+
+.promo-tab__video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: calc(100% - 72px);
+  border: none;
+}

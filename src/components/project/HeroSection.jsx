@@ -1,4 +1,5 @@
 import Button from "../Button";
+import Icon from "../Icon";
 import Tag from "../Tag";
 import "./HeroSection.css";
 
@@ -40,16 +41,20 @@ function HeroSection({ heroImage, category, title, timeline, tags, description, 
         <div className="hero-section__actions">
           {links?.prototype && (
             <Button
-              variant="link"
+              variant="link-muted"
               onClick={() => window.open(links.prototype, "_blank")}
+              icon={<Icon name="link_2" size={32} weight={100} />}
+              iconPosition="left"
             >
               Prototype
             </Button>
           )}
           {links?.github && (
             <Button
-              variant="link"
+              variant="link-muted"
               onClick={() => window.open(links.github, "_blank")}
+              icon={<Icon name="link_2" size={32} weight={100} />}
+              iconPosition="left"
             >
               GitHub
             </Button>

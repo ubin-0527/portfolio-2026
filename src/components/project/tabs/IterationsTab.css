@@ -6,3 +6,7 @@
   flex-direction: column;
   gap: 40px;
 }
+
+.iterations-tab__subsections {
+  width: 100%;
+}

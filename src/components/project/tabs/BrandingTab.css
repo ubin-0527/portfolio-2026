@@ -1,0 +1,12 @@
+.branding-tab {
+  width: 100vw;
+  padding: 80px 148px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.branding-tab__subsections {
+  width: 100%;
+}

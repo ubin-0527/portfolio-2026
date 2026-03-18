@@ -1,19 +1,19 @@
 import { useNavigate } from "react-router-dom";
-import Button from "./Button";
-import Icon from "./Icon";
+import "./BackButton.css";
+import backIcon from "../assets/home/back-icon.png";
 
-function BackButton({ label = "", className = "" }) {
+function BackButton({ to }) {
   const navigate = useNavigate();
 
+  const handleClick = () => {
+    to ? navigate(to) : navigate(-1);
+  };
+
   return (
-    <Button
-      variant="icon-only"
-      onClick={() => navigate(-1)}
-      icon={<Icon name="arrow_left_alt" weight={100}/>}
-      className={className}
-    >
-      {label}
-    </Button>
+    <button className="back-button" onClick={handleClick}>
+      <img src={backIcon} alt="" aria-hidden="true" className="back-button__icon" />
+      <span className="back-button__text">Back</span>
+    </button>
   );
 }
 

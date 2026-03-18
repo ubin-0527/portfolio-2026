@@ -1,6 +1,6 @@
 .devprocess-section {
-  width: 1144px;
-  margin: 72px auto;
+  width: 100%;
+  margin: 72px 0;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -15,6 +15,7 @@
   color: #636363;
   margin: 0;
   text-align: left;
+  padding: 0 148px;
 }
 
 .devprocess-section__nav {
@@ -44,6 +45,5 @@
 }
 
 .devprocess-section__content {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
+  width: 100%;
 }

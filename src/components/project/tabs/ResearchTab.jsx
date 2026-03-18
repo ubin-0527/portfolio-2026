@@ -1,9 +1,9 @@
 import TabHeader from "./TabHeader";
+import TabSubsection from "./TabSubsection";
 import "./ResearchTab.css";
 import background1 from "../../../assets/prolog/background-1.png";
 import background2 from "../../../assets/prolog/background-2.png";
-import persona1 from "../../../assets/prolog/persona-1.png";
-import persona2 from "../../../assets/prolog/persona-2.png";
+import persona from "../../../assets/prolog/personas.png";
 
 const groups = [
   {
@@ -13,6 +13,7 @@ const groups = [
         title: "Background",
         content: "Skilled trades apprenticeships are long and demanding journeys that require individuals to complete approximately 4,000 hours of practical work experience alongside academic courses at designated institutions, all while managing their financial responsibilities.",
         list: null,
+        images: null,
       },
       {
         title: "Problem",
@@ -22,6 +23,8 @@ const groups = [
           "Scattered and dense resources",
           "Websites not built for mobile use with difficult navigation",
         ],
+        listMarginTop: "32px",
+        images: null,
       },
     ],
   },
@@ -38,10 +41,7 @@ const groups = [
         title: "User Persona",
         content: null,
         list: null,
-        images: [
-          { src: persona1, alt: "User Persona 1" },
-          { src: persona2, alt: "User Persona 2" },
-        ],
+        images: [{ src: persona, alt: "User Persona" }],
       },
     ],
   },
@@ -62,35 +62,13 @@ function ResearchTab() {
 
           {group.subsections.length > 0 && (
             <div className="research-tab__subsections">
-              {group.subsections.map((subsection, index) => {
-                const isLast = index === group.subsections.length - 1;
-                return (
-                  <div
-                    key={index}
-                    className="research-tab__subsection"
-                    style={{ borderBottom: isLast ? "none" : "1px solid #343434" }}
-                  >
-                    <h4 className="research-tab__subsection-title">{subsection.title}</h4>
-                    <div className="research-tab__subsection-content">
-                      {subsection.content && <p>{subsection.content}</p>}
-                      {subsection.list && (
-                        <ul className="research-tab__subsection-list">
-                          {subsection.list.map((item, i) => (
-                            <li key={i}>{item}</li>
-                          ))}
-                        </ul>
-                      )}
-                      {subsection.images && (
-                        <div className="research-tab__subsection-images">
-                          {subsection.images.map((image, i) => (
-                            <img key={i} src={image.src} alt={image.alt} />
-                          ))}
-                        </div>
-                      )}
-                    </div>
-                  </div>
-                );
-              })}
+              {group.subsections.map((subsection, index) => (
+                <TabSubsection
+                  key={index}
+                  {...subsection}
+                  isLast={index === group.subsections.length - 1}
+                />
+              ))}
             </div>
           )}
 

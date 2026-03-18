@@ -1,10 +1,9 @@
 import "./Prolog.css";
+import BackButton from "../components/BackButton";
 import HeroSection from "../components/project/HeroSection";
-import GallerySection from "../components/project/GallerySection";
 import OverviewSection from "../components/project/OverviewSection";
 import DevProcessSection from "../components/project/DevProcessSection";
 import heroData from "../data/hero";
-import galleryData from "../data/gallery";
 import overviewData from "../data/overview";
 
 const { heroImage, category, title, timeline, tags, description, links } = heroData.prolog;
@@ -12,6 +11,7 @@ const { heroImage, category, title, timeline, tags, description, links } = heroD
 function Prolog() {
   return (
     <div className="prolog-page">
+      <BackButton to="/projects" />
       <HeroSection
         heroImage={heroImage}
         category={category}
@@ -21,7 +21,6 @@ function Prolog() {
         description={description}
         links={links}
       />
-      <GallerySection images={galleryData.prolog} />
       <OverviewSection {...overviewData.prolog} />
       <DevProcessSection />
     </div>

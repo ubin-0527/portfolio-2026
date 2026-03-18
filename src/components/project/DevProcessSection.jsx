@@ -4,14 +4,16 @@ import ResearchTab     from "./tabs/ResearchTab";
 import IterationsTab   from "./tabs/IterationsTab";
 import BrandingTab     from "./tabs/BrandingTab";
 import FinalProductTab from "./tabs/FinalProductTab";
+import PromoTab        from "./tabs/PromoTab";
 
-const TABS = ["01 Research", "02 Iterations", "03 Branding", "04 Final Product"];
+const TABS = ["01 Research", "02 Iterations", "03 Branding", "04 Final Product", "05 Promo Assets"];
 
 const TAB_COMPONENTS = {
   "01 Research":      <ResearchTab />,
   "02 Iterations":    <IterationsTab />,
   "03 Branding":      <BrandingTab />,
   "04 Final Product": <FinalProductTab />,
+  "05 Promo Assets":  <PromoTab />,
 };
 
 function DevProcessSection() {
