@@ -1,5 +1,6 @@
 import prologHero from "../assets/prolog/hero.png";
 import twoAmHero from "../assets/project/2am/2am-hero.png";
+import deerlakeHero from "../assets/project/deerlake/shot-2.png";
 
 const heroData = {
   prolog: {
@@ -45,6 +46,18 @@ const heroData = {
     timeline: "2025",
     tags: ["Can", "Print", "Branding"],
     description: "2AM Brain is a concept energy drink brand designed to appeal to youth culture through bold visual identity. The brand features three flavour variants: Berry, Citrus, and Tropical. Each distinguished by vibrant colour palettes and fruit illustrations, unified by a signature skull mascot.",
+    links: {
+      prototype: "",
+      github: "",
+    },
+  },
+  deerlake: {
+    heroImage: deerlakeHero,
+    category: "Motion Graphic",
+    title: "Deer Lake",
+    timeline: "2025",
+    tags: ["Tourism", "Cinematic", "Vector Graphics"],
+    description: "An atmospheric short film for Deer Lake Park in Burnaby, BC, where a 550-metre trail of 312 staircases holds a forgotten story. Metal plaques along the route recount the trilogy of Chief Capilano and the monstrous King of Seal from E. Pauline Johnson\u2019s 1911 \u2018Legends of Vancouver.\u2019 Graded in warm amber tones with a fisheye lens effect, the film draws from noir and detective cinema to transform an ordinary park trail into a cinematic mystery \u2014 closing not with answers, but with a hook: \u2018What happened to Capilano? Come and find out.\u2019",
     links: {
       prototype: "",
       github: "",

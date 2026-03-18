@@ -1,0 +1,30 @@
+.deerlake-concept-tab {
+  width: 100vw;
+  padding: 80px 148px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.deerlake-concept-tab__image {
+  width: 100%;
+  padding-top: 72px;
+  display: flex;
+  justify-content: center;
+}
+
+.deerlake-concept-tab__image img {
+  width: 60%;
+  height: auto;
+  display: block;
+}
+
+.deerlake-concept-tab__subsections {
+  width: 100%;
+}
+
+.deerlake-concept-tab__subsections img {
+  display: block;
+  margin: 0 auto;
+}

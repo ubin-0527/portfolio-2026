@@ -4,6 +4,9 @@ import overview3 from "../assets/prolog/overview-3.png";
 import overview4 from "../assets/prolog/overview-4.png";
 import twoAmOverview1 from "../assets/project/2am/2am-overview-1.png";
 import twoAmOverview2 from "../assets/project/2am/2am-overview-2.png";
+import deerlakeThumbnail from "../assets/project/deerlake/deerlake-thumbnail-photo.png";
+import deerlakeShot2 from "../assets/project/deerlake/shot-2.png";
+import deerlakeShot4 from "../assets/project/deerlake/shot-4.png";
 
 const overviewData = {
   prolog: {
@@ -47,6 +50,20 @@ const overviewData = {
     images: [
       { src: twoAmOverview1, alt: "2AM overview 1" },
       { src: twoAmOverview2, alt: "2AM overview 2" },
+    ],
+  },
+  deerlake: {
+    objective: "To produce a cinematic advertisement video for the City of Burnaby that reveals the hidden folklore embedded in Deer Lake Park\u2019s staircase trail, transforming a familiar local landmark into a compelling narrative experience through noir-inspired cinematography and atmospheric storytelling.",
+    roleLabel: "Project Type",
+    role: "Solo Project",
+    contributionsLabel: "Outputs",
+    contributions: [
+      "Video",
+    ],
+    images: [
+      { src: deerlakeThumbnail, alt: "Deer Lake thumbnail" },
+      { src: deerlakeShot2, alt: "Deer Lake shot 2" },
+      { src: deerlakeShot4, alt: "Deer Lake shot 4" },
     ],
   },
   cuddleworks: {

@@ -1,0 +1,18 @@
+.deerlake-page {
+  min-height: 100dvh;
+  background: radial-gradient(ellipse at center, #ffffff 0%, #ebebeb 100%);
+}
+
+.deerlake-video {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 32px;
+  aspect-ratio: 16 / 9;
+}
+
+.deerlake-video iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
