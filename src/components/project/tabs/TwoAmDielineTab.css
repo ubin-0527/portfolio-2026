@@ -1,0 +1,17 @@
+.twoam-dieline-tab {
+  width: 100vw;
+  padding: 80px 148px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.twoam-dieline-tab__subsections {
+  width: 100%;
+}
+
+.twoam-dieline-tab__subsections img {
+  display: block;
+  margin: 0 auto;
+}

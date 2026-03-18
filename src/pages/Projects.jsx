@@ -46,7 +46,11 @@ function Projects() {
       {/* Title bar */}
       <div className="projects-titlebar">
         <button className="projects-titlebar__arrow" onClick={handlePrev} aria-label="Previous project">‹</button>
-        <h1 className="projects-titlebar__title">{selected.title}</h1>
+        <div className="projects-titlebar__info">
+          <span className="projects-titlebar__category">{selected.category}</span>
+          <h1 className="projects-titlebar__title">{selected.title}</h1>
+          <div className="projects-titlebar__bar"></div>
+        </div>
         <button className="projects-titlebar__arrow" onClick={handleNext} aria-label="Next project">›</button>
       </div>
 
@@ -64,7 +68,7 @@ function Projects() {
             <button
               key={`${project.id}-${index}`}
               className={`projects-thumbnails__item ${index === extendedIndex ? "projects-thumbnails__item--active" : ""}`}
-              onClick={() => setExtendedIndex(index)}
+              onClick={() => index === extendedIndex ? navigate(project.route) : setExtendedIndex(index)}
             >
               <img src={project.thumbnail} alt={project.title} />
             </button>

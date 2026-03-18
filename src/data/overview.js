@@ -2,6 +2,8 @@ import overview1 from "../assets/prolog/overview-1.png";
 import overview2 from "../assets/prolog/overview-2.png";
 import overview3 from "../assets/prolog/overview-3.png";
 import overview4 from "../assets/prolog/overview-4.png";
+import twoAmOverview1 from "../assets/project/2am/2am-overview-1.png";
+import twoAmOverview2 from "../assets/project/2am/2am-overview-2.png";
 
 const overviewData = {
   prolog: {
@@ -31,6 +33,21 @@ const overviewData = {
     role: "",
     contributions: [],
     images: [],
+  },
+  twoam: {
+    objective: "To conceptualize and execute a complete beverage can label design with three iterations intended for the Canadian market, with production-ready dielines and realistic mockups.",
+    roleLabel: "Project Type",
+    role: "Solo project",
+    contributionsLabel: "Outputs",
+    contributions: [
+      "Can design iterations",
+      "Dielines",
+      "Branding materials",
+    ],
+    images: [
+      { src: twoAmOverview1, alt: "2AM overview 1" },
+      { src: twoAmOverview2, alt: "2AM overview 2" },
+    ],
   },
   cuddleworks: {
     objective: "",

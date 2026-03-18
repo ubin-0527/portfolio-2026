@@ -3,9 +3,10 @@
   top: var(--top-navbar-offset);
   left: 0;
   right: 0;
+  height: 48px;
   display: flex;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 32px;
   z-index: 100;
 }
 
@@ -18,11 +19,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 48px;
+  width: 40px;
 }
 
 .top-navbar__fullscreen-icon {
   color: #747474;
   transition: color 0.3s ease;
+  line-height: 1;
+  display: block;
 }
 
 .top-navbar__fullscreen--active .top-navbar__fullscreen-icon {
@@ -48,14 +53,15 @@
 .top-navbar__logo {
   position: absolute;
   left: 50%;
-  width: 56px;
-  transform: translateX(-50%);
+  top: 50%;
+  width: 54px;
+  transform: translateX(-50%) translateY(-50%);
   transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 .top-navbar__logo--hidden {
   opacity: 0;
-  transform: translateX(-50%) translateY(-20px);
+  transform: translateX(-50%) translateY(calc(-50% - 20px));
 }
 
 .top-navbar__contact {

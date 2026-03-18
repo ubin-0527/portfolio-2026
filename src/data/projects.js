@@ -13,6 +13,7 @@ const projects = [
   {
     id: "deerlake",
     title: "Deer Lake",
+    category: "Motion Graphic",
     thumbnail: deerlakeThumbnail,
     description: deerlakeDes,
     route: "/deerlake",
@@ -20,6 +21,7 @@ const projects = [
   {
     id: "prolog",
     title: "ProLog",
+    category: "UI/UX",
     thumbnail: prologThumbnail,
     description: prologDes,
     route: "/prolog",
@@ -27,6 +29,7 @@ const projects = [
   {
     id: "dreamcreatives",
     title: "Dream Creatives",
+    category: "UI/UX",
     thumbnail: dreamThumbnail,
     description: dreamDes,
     route: "/dreamcreatives",
@@ -34,6 +37,7 @@ const projects = [
   {
     id: "2am",
     title: "2AM",
+    category: "Package",
     thumbnail: amThumbnail,
     description: amDes,
     route: "/2am",
@@ -41,6 +45,7 @@ const projects = [
   {
     id: "ignition",
     title: "Ignition",
+    category: "Print",
     thumbnail: ignitionThumbnail,
     description: ignitionDes,
     route: "/ignition",

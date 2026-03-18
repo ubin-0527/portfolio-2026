@@ -1,4 +1,5 @@
 import prologHero from "../assets/prolog/hero.png";
+import twoAmHero from "../assets/project/2am/2am-hero.png";
 
 const heroData = {
   prolog: {
@@ -32,6 +33,18 @@ const heroData = {
     timeline: "",
     tags: [],
     description: "",
+    links: {
+      prototype: "",
+      github: "",
+    },
+  },
+  twoam: {
+    heroImage: twoAmHero,
+    category: "Package",
+    title: "2AM Brain",
+    timeline: "2025",
+    tags: ["Can", "Print", "Branding"],
+    description: "2AM Brain is a concept energy drink brand designed to appeal to youth culture through bold visual identity. The brand features three flavour variants: Berry, Citrus, and Tropical. Each distinguished by vibrant colour palettes and fruit illustrations, unified by a signature skull mascot.",
     links: {
       prototype: "",
       github: "",

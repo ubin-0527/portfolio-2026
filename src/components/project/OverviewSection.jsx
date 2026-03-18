@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./OverviewSection.css";
 
-function OverviewSection({ objective, role, contributions, images }) {
+function OverviewSection({ objective, role, roleLabel = "Role", contributions, contributionsLabel = "Contributions", images }) {
   const [currentIndex, setCurrentIndex]       = useState(0);
   const [transitionState, setTransitionState] = useState("idle");
 
@@ -40,19 +40,23 @@ function OverviewSection({ objective, role, contributions, images }) {
             <p className="overview-section__text">{objective}</p>
           </div>
 
-          <div className="overview-section__group">
-            <h3 className="overview-section__label">Role</h3>
-            <p className="overview-section__text">{role}</p>
-          </div>
+          {role && (
+            <div className="overview-section__group">
+              <h3 className="overview-section__label">{roleLabel}</h3>
+              <p className="overview-section__text">{role}</p>
+            </div>
+          )}
 
-          <div className="overview-section__group">
-            <h3 className="overview-section__label">Contributions</h3>
-            <ul className="overview-section__list">
-              {contributions?.map((item, index) => (
-                <li key={index} className="overview-section__text">{item}</li>
-              ))}
-            </ul>
-          </div>
+          {contributions?.length > 0 && (
+            <div className="overview-section__group">
+              <h3 className="overview-section__label">{contributionsLabel}</h3>
+              <ul className="overview-section__list">
+                {contributions.map((item, index) => (
+                  <li key={index} className="overview-section__text">{item}</li>
+                ))}
+              </ul>
+            </div>
+          )}
 
         </div>
 

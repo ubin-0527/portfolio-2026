@@ -9,6 +9,7 @@ import ProjectDetails from "./pages/ProjectDetail";
 import DraftProlog from "./pages/DraftProlog";
 import Prolog from "./pages/Prolog";
 import DreamCreatives from "./pages/DreamCreatives";
+import TwoAm from "./pages/TwoAm";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         </Route>
         <Route path="/prolog"          element={<Prolog />}          />
         <Route path="/dreamcreatives"  element={<DreamCreatives />}  />
+        <Route path="/2am"              element={<TwoAm />}           />
       </Routes>
     </Router>
   );
