@@ -26,6 +26,12 @@ const overviewData = {
     contributions: [],
     images: [],
   },
+  dreamcreatives: {
+    objective: "",
+    role: "",
+    contributions: [],
+    images: [],
+  },
   cuddleworks: {
     objective: "",
     role: "",

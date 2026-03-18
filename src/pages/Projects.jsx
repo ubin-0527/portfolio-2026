@@ -1,40 +1,85 @@
-import { useState, useCallback } from "react";
-import { Link } from "react-router-dom";
+import { useState, useRef, useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Projects.css";
-import uiuxBox    from "../assets/project/uiux-box.png";
-import uiuxPc     from "../assets/project/uiux-pc.png";
-import uiuxMobile from "../assets/project/uiux-mobile.png";
-import cursorImg  from "../assets/project/cursor.png";
+import projects from "../data/projects";
+
+const ITEM_WIDTH = 400;
+const GAP        = 104;
+const COUNT      = projects.length;
+
+// Triple the array: clones before + real + clones after
+const extended = [...projects, ...projects, ...projects];
 
 function Projects() {
-  const [cursor, setCursor] = useState({ visible: false, x: 0, y: 0 });
+  // Start at COUNT (first real item in the middle copy)
+  const [extendedIndex, setExtendedIndex] = useState(COUNT);
+  const [noTransition, setNoTransition]   = useState(false);
+  const navigate = useNavigate();
 
-  const handleMouseMove = useCallback((e) => {
-    setCursor({ visible: true, x: e.clientX, y: e.clientY });
-  }, []);
+  const realIndex = extendedIndex % COUNT;
+  const selected  = projects[realIndex];
 
-  const handleMouseLeave = useCallback(() => {
-    setCursor((prev) => ({ ...prev, visible: false }));
-  }, []);
+  const handlePrev = () => setExtendedIndex((prev) => prev - 1);
+  const handleNext = () => setExtendedIndex((prev) => prev + 1);
+
+  // After each slide animation ends, silently snap back into the real zone
+  const handleTransitionEnd = useCallback(() => {
+    let snapped = extendedIndex;
+    if (extendedIndex < COUNT)         snapped = extendedIndex + COUNT;
+    if (extendedIndex >= COUNT * 2)    snapped = extendedIndex - COUNT;
+
+    if (snapped !== extendedIndex) {
+      setNoTransition(true);
+      setExtendedIndex(snapped);
+      requestAnimationFrame(() =>
+        requestAnimationFrame(() => setNoTransition(false))
+      );
+    }
+  }, [extendedIndex]);
+
+  const selectedCenter = extendedIndex * (ITEM_WIDTH + GAP) + ITEM_WIDTH / 2;
+  const trackOffset    = `calc(50vw - ${selectedCenter}px)`;
 
   return (
     <div className="projects-page">
 
-      {cursor.visible && (
-        <img
-          src={cursorImg}
-          className="projects-cursor"
-          style={{ left: cursor.x, top: cursor.y }}
-          alt=""
-          aria-hidden="true"
-        />
-      )}
+      {/* Title bar */}
+      <div className="projects-titlebar">
+        <button className="projects-titlebar__arrow" onClick={handlePrev} aria-label="Previous project">‹</button>
+        <h1 className="projects-titlebar__title">{selected.title}</h1>
+        <button className="projects-titlebar__arrow" onClick={handleNext} aria-label="Next project">›</button>
+      </div>
 
-      <Link to="/prolog" className="projects-stack" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
-        <img src={uiuxMobile} alt="UI/UX Mobile" className="projects-stack__img" style={{ zIndex: 1 }} />
-        <img src={uiuxPc}     alt="UI/UX PC"     className="projects-stack__img" style={{ zIndex: 4 }} />
-        <img src={uiuxBox}    alt="UI/UX Box"    className="projects-stack__img" style={{ zIndex: 5 }} />
-      </Link>
+      {/* Thumbnails carousel */}
+      <div className="projects-thumbnails">
+        <div
+          className="projects-thumbnails__track"
+          style={{
+            transform: `translateX(${trackOffset})`,
+            transition: noTransition ? "none" : "transform 500ms ease-in-out",
+          }}
+          onTransitionEnd={handleTransitionEnd}
+        >
+          {extended.map((project, index) => (
+            <button
+              key={`${project.id}-${index}`}
+              className={`projects-thumbnails__item ${index === extendedIndex ? "projects-thumbnails__item--active" : ""}`}
+              onClick={() => setExtendedIndex(index)}
+            >
+              <img src={project.thumbnail} alt={project.title} />
+            </button>
+          ))}
+        </div>
+      </div>
+
+      {/* Description */}
+      <div className="projects-description">
+        <img
+          key={selected.id}
+          src={selected.description}
+          alt={`${selected.title} description`}
+        />
+      </div>
 
     </div>
   );

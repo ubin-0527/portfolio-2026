@@ -25,6 +25,18 @@ const heroData = {
       github: "",
     },
   },
+  dreamcreatives: {
+    heroImage: "",
+    category: "",
+    title: "Dream Creatives",
+    timeline: "",
+    tags: [],
+    description: "",
+    links: {
+      prototype: "",
+      github: "",
+    },
+  },
   cuddleworks: {
     heroImage: "",
     category: "",

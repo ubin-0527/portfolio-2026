@@ -8,6 +8,7 @@ import Projects from "./pages/Projects";
 import ProjectDetails from "./pages/ProjectDetail";
 import DraftProlog from "./pages/DraftProlog";
 import Prolog from "./pages/Prolog";
+import DreamCreatives from "./pages/DreamCreatives";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
           <Route path="/projects/:id" element={<ProjectDetails />} />
           <Route path="/draftprolog"  element={<DraftProlog />}    />
         </Route>
-        <Route path="/prolog" element={<Prolog />} />
+        <Route path="/prolog"          element={<Prolog />}          />
+        <Route path="/dreamcreatives"  element={<DreamCreatives />}  />
       </Routes>
     </Router>
   );

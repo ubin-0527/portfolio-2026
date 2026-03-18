@@ -1,13 +1,20 @@
-import { useState, useCallback } from "react";
-import { Outlet } from "react-router-dom";
+import { useState, useCallback, useEffect } from "react";
+import { Outlet, useLocation } from "react-router-dom";
 import TopNavBar from "./TopNavBar";
 import SideNavBar from "./SideNavBar";
 import PagePlaque from "./PagePlaque";
 import "./Layout.css";
 
+const SIDENAV_HIDDEN_ROUTES = ["/projects"];
+
 function Layout() {
+  const { pathname } = useLocation();
   const [isNavHidden, setIsNavHidden]     = useState(false);
   const [isSideNavOpen, setIsSideNavOpen] = useState(true);
+
+  useEffect(() => {
+    setIsSideNavOpen(!SIDENAV_HIDDEN_ROUTES.includes(pathname));
+  }, [pathname]);
 
   const handleToggleFullscreen = useCallback(() => {
     setIsNavHidden((prev) => !prev);
