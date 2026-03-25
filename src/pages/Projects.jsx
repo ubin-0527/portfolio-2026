@@ -2,6 +2,8 @@ import { useState, useRef, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Projects.css";
 import projects from "../data/projects";
+import leftArrow from "../assets/project/left-arrow.png";
+import rightArrow from "../assets/project/right-arrow.png";
 
 const ITEM_WIDTH = 400;
 const GAP        = 104;
@@ -45,13 +47,17 @@ function Projects() {
 
       {/* Title bar */}
       <div className="projects-titlebar">
-        <button className="projects-titlebar__arrow" onClick={handlePrev} aria-label="Previous project">‹</button>
+        <button className="projects-titlebar__arrow" onClick={handlePrev} aria-label="Previous project">
+          <img src={leftArrow} alt="" width={24} />
+        </button>
         <div className="projects-titlebar__info">
           <span className="projects-titlebar__category">{selected.category}</span>
           <h1 className="projects-titlebar__title">{selected.title}</h1>
           <div className="projects-titlebar__bar"></div>
         </div>
-        <button className="projects-titlebar__arrow" onClick={handleNext} aria-label="Next project">›</button>
+        <button className="projects-titlebar__arrow" onClick={handleNext} aria-label="Next project">
+          <img src={rightArrow} alt="" width={24} />
+        </button>
       </div>
 
       {/* Thumbnails carousel */}

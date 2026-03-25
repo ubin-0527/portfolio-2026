@@ -25,3 +25,23 @@
   height: calc(100% - 72px);
   border: none;
 }
+
+.promo-tab__group .tab-subsection {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.promo-tab__pair {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: 100%;
+  margin-top: 16px;
+  padding-bottom: 72px;
+}
+
+.promo-tab__pair img {
+  width: 50%;
+  height: auto;
+  display: block;
+}
