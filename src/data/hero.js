@@ -54,7 +54,7 @@ const heroData = {
   deerlake: {
     heroImage: deerlakeHero,
     category: "Motion Graphic",
-    title: "Deer Lake",
+    title: "Finding 13 Plaques\nof Deer Lake Legend",
     timeline: "2025",
     tags: ["Tourism", "Cinematic", "Vector Graphics"],
     description: "An atmospheric short film for Deer Lake Park in Burnaby, BC, where a 550-metre trail of 312 staircases holds a forgotten story. Metal plaques along the route recount the trilogy of Chief Capilano and the monstrous King of Seal from E. Pauline Johnson\u2019s 1911 \u2018Legends of Vancouver.\u2019 Graded in warm amber tones with a fisheye lens effect, the film draws from noir and detective cinema to transform an ordinary park trail into a cinematic mystery \u2014 closing not with answers, but with a hook: \u2018What happened to Capilano? Come and find out.\u2019",

@@ -67,10 +67,14 @@ function Projects() {
           {extended.map((project, index) => (
             <button
               key={`${project.id}-${index}`}
-              className={`projects-thumbnails__item ${index === extendedIndex ? "projects-thumbnails__item--active" : ""}`}
-              onClick={() => index === extendedIndex ? navigate(project.route) : setExtendedIndex(index)}
+              className={`projects-thumbnails__item ${index === extendedIndex ? "projects-thumbnails__item--active" : ""} ${project.comingSoon ? "projects-thumbnails__item--coming-soon" : ""}`}
+              onClick={() => {
+                if (index === extendedIndex && !project.comingSoon) navigate(project.route);
+                else if (index !== extendedIndex) setExtendedIndex(index);
+              }}
             >
               <img src={project.thumbnail} alt={project.title} />
+              {project.comingSoon && <span className="projects-thumbnails__coming-soon">Coming Soon</span>}
             </button>
           ))}
         </div>

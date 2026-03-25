@@ -107,6 +107,33 @@
   width: 100%;
 }
 
+.projects-thumbnails__item--coming-soon {
+  position: relative;
+}
+
+.projects-thumbnails__item--coming-soon::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+.projects-thumbnails__coming-soon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Stack Sans Notch", system-ui, sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+  pointer-events: none;
+  z-index: 1;
+}
+
 /* Description */
 .projects-description {
   height: 240px;

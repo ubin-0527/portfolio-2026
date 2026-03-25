@@ -4,7 +4,7 @@
     --color-primary: #00563F;
 
     /* Layout */
-    --top-navbar-offset: 3rem;
+    --top-navbar-offset: 48px;
 
     /* Shadows */
     --shadow-glow: -2px -2px 4px #B7C4C4, 2px 2px 4px #B7C4C4, -4px -4px 20px #EDEDED, 4px 4px 20px #EDEDED;

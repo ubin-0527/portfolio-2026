@@ -11,14 +11,6 @@ import amDes              from "../assets/project/2am-des.png";
 
 const projects = [
   {
-    id: "deerlake",
-    title: "Deer Lake",
-    category: "Motion Graphic",
-    thumbnail: deerlakeThumbnail,
-    description: deerlakeDes,
-    route: "/deerlake",
-  },
-  {
     id: "prolog",
     title: "ProLog",
     category: "UI/UX",
@@ -33,10 +25,11 @@ const projects = [
     thumbnail: dreamThumbnail,
     description: dreamDes,
     route: "/dreamcreatives",
+    comingSoon: true,
   },
   {
     id: "2am",
-    title: "2AM",
+    title: "2AM Brain",
     category: "Package",
     thumbnail: amThumbnail,
     description: amDes,
@@ -49,6 +42,15 @@ const projects = [
     thumbnail: ignitionThumbnail,
     description: ignitionDes,
     route: "/ignition",
+    comingSoon: true,
+  },
+  {
+    id: "deerlake",
+    title: "13 Plaques",
+    category: "Motion Graphic",
+    thumbnail: deerlakeThumbnail,
+    description: deerlakeDes,
+    route: "/deerlake",
   },
 ];
 
