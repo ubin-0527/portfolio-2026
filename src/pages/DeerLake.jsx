@@ -1,5 +1,6 @@
 import "./DeerLake.css";
 import BackButton from "../components/BackButton";
+import ScrollToTopButton from "../components/ScrollToTopButton";
 import HeroSection from "../components/project/HeroSection";
 import OverviewSection from "../components/project/OverviewSection";
 import DevProcessSection from "../components/project/DevProcessSection";
@@ -43,6 +44,7 @@ function DeerLake() {
       </div>
       <OverviewSection {...overviewData.deerlake} />
       <DevProcessSection tabs={deerLakeTabs} />
+      <ScrollToTopButton />
     </div>
   );
 }

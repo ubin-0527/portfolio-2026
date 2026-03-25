@@ -1,6 +1,7 @@
 import prologHero from "../assets/prolog/hero.png";
 import twoAmHero from "../assets/project/2am/2am-hero.png";
 import deerlakeHero from "../assets/project/deerlake/shot-2.png";
+import dcHero from "../assets/project/dreamcreatives/dc_hero.png";
 
 const heroData = {
   prolog: {
@@ -28,14 +29,14 @@ const heroData = {
     },
   },
   dreamcreatives: {
-    heroImage: "",
-    category: "",
+    heroImage: dcHero,
+    category: "UI/UX",
     title: "Dream Creatives",
-    timeline: "",
-    tags: [],
-    description: "",
+    timeline: "2026",
+    tags: ["Hackathon Winner", "Website Revamp", "AI Photo Generator"],
+    description: "A first-place winning project from the FLUI Design Jam at Emily Carr, where our team of four redesigned the web experience for Dream Creatives\u2014a creative studio behind AI-powered photo booths for events. Through a web design audit, client interviews, and rapid iteration over three days, we transformed a tablet-locked interface into a scrollable, approachable platform that better communicates the product\u2019s value and invites a broader audience.",
     links: {
-      prototype: "",
+      prototype: "https://www.figma.com/proto/2FTLdzYljToALwUunj6pg1/FLUI---Team-Design-File?node-id=558-4398&viewport=159%2C244%2C0.05&t=0osPY8vARnFzaMY9-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=558%3A4398&page-id=203%3A716",
       github: "",
     },
   },

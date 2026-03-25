@@ -25,7 +25,6 @@ const projects = [
     thumbnail: dreamThumbnail,
     description: dreamDes,
     route: "/dreamcreatives",
-    comingSoon: true,
   },
   {
     id: "2am",

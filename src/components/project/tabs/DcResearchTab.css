@@ -1,0 +1,12 @@
+.dc-research-tab {
+  width: 100vw;
+  padding: 80px 148px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.dc-research-tab__subsections {
+  width: 100%;
+}

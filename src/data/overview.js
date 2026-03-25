@@ -32,9 +32,14 @@ const overviewData = {
     images: [],
   },
   dreamcreatives: {
-    objective: "",
-    role: "",
-    contributions: [],
+    objective: "To redesign Dream Creatives\u2019 web platform into an intuitive, scrollable experience that clearly communicates its AI-powered photo booth product, builds trust with a broader audience beyond corporate clients, and provides a clearer path to onboarding and engagement.",
+    role: "UI/UX Designer",
+    contributions: [
+      "Creating wireframe iterations",
+      "Conducting web design audit",
+      "Creating styleguides",
+      "Prototyping",
+    ],
     images: [],
   },
   twoam: {

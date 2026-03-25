@@ -1,5 +1,6 @@
 import "./TwoAm.css";
 import BackButton from "../components/BackButton";
+import ScrollToTopButton from "../components/ScrollToTopButton";
 import HeroSection from "../components/project/HeroSection";
 import OverviewSection from "../components/project/OverviewSection";
 import DevProcessSection from "../components/project/DevProcessSection";
@@ -34,6 +35,7 @@ function TwoAm() {
       />
       <OverviewSection {...overviewData.twoam} />
       <DevProcessSection tabs={twoAmTabs} />
+      <ScrollToTopButton />
     </div>
   );
 }
