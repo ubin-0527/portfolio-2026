@@ -7,6 +7,12 @@ import twoAmOverview2 from "../assets/project/2am/2am-overview-2.png";
 import deerlakeThumbnail from "../assets/project/deerlake/deerlake-thumbnail-photo.png";
 import deerlakeShot2 from "../assets/project/deerlake/shot-2.png";
 import deerlakeShot4 from "../assets/project/deerlake/shot-4.png";
+import dcOverview1 from "../assets/project/dreamcreatives/dc_overview_1.png";
+import dcOverview2 from "../assets/project/dreamcreatives/dc_overview_2.png";
+import dcOverview3 from "../assets/project/dreamcreatives/dc_overview_3.png";
+import ignitionOverview1 from "../assets/project/ignition/ignition_overview_1.png";
+import ignitionOverview2 from "../assets/project/ignition/ignition_overview_2.png";
+import ignitionOverview3 from "../assets/project/ignition/ignition_overview_3.png";
 
 const overviewData = {
   prolog: {
@@ -40,7 +46,11 @@ const overviewData = {
       "Creating styleguides",
       "Prototyping",
     ],
-    images: [],
+    images: [
+      { src: dcOverview1, alt: "Dream Creatives overview 1" },
+      { src: dcOverview2, alt: "Dream Creatives overview 2" },
+      { src: dcOverview3, alt: "Dream Creatives overview 3" },
+    ],
   },
   twoam: {
     objective: "To conceptualize and execute a complete beverage can label design with three iterations intended for the Canadian market, with production-ready dielines and realistic mockups.",
@@ -69,6 +79,21 @@ const overviewData = {
       { src: deerlakeThumbnail, alt: "Deer Lake thumbnail" },
       { src: deerlakeShot2, alt: "Deer Lake shot 2" },
       { src: deerlakeShot4, alt: "Deer Lake shot 4" },
+    ],
+  },
+  ignition: {
+    objective: "To develop a cohesive visual identity for a conceptual luxury jewelry brand across three distinct collections, producing poster designs and product visuals that communicate each line\u2019s unique character through vector illustration, 3D modelling, and texture layering.",
+    roleLabel: "Project Type",
+    role: "Solo project",
+    contributionsLabel: "Outputs",
+    contributions: [
+      "Poster design iterations",
+      "Product design",
+    ],
+    images: [
+      { src: ignitionOverview1, alt: "Ignition overview 1" },
+      { src: ignitionOverview2, alt: "Ignition overview 2" },
+      { src: ignitionOverview3, alt: "Ignition overview 3" },
     ],
   },
   cuddleworks: {

@@ -11,6 +11,7 @@ import Prolog from "./pages/Prolog";
 import DreamCreatives from "./pages/DreamCreatives";
 import TwoAm from "./pages/TwoAm";
 import DeerLake from "./pages/DeerLake";
+import Ignition from "./pages/Ignition";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/dreamcreatives"  element={<DreamCreatives />}  />
         <Route path="/2am"              element={<TwoAm />}           />
         <Route path="/deerlake"         element={<DeerLake />}        />
+        <Route path="/ignition"         element={<Ignition />}        />
       </Routes>
     </Router>
   );

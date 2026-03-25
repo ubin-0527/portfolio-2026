@@ -2,6 +2,7 @@ import prologHero from "../assets/prolog/hero.png";
 import twoAmHero from "../assets/project/2am/2am-hero.png";
 import deerlakeHero from "../assets/project/deerlake/shot-2.png";
 import dcHero from "../assets/project/dreamcreatives/dc_hero.png";
+import ignitionHero from "../assets/project/ignition-thumbnail.png";
 
 const heroData = {
   prolog: {
@@ -59,6 +60,18 @@ const heroData = {
     timeline: "2025",
     tags: ["Tourism", "Cinematic", "Vector Graphics"],
     description: "An atmospheric short film for Deer Lake Park in Burnaby, BC, where a 550-metre trail of 312 staircases holds a forgotten story. Metal plaques along the route recount the trilogy of Chief Capilano and the monstrous King of Seal from E. Pauline Johnson\u2019s 1911 \u2018Legends of Vancouver.\u2019 Graded in warm amber tones with a fisheye lens effect, the film draws from noir and detective cinema to transform an ordinary park trail into a cinematic mystery \u2014 closing not with answers, but with a hook: \u2018What happened to Capilano? Come and find out.\u2019",
+    links: {
+      prototype: "",
+      github: "",
+    },
+  },
+  ignition: {
+    heroImage: ignitionHero,
+    category: "Print",
+    title: "Ignition",
+    timeline: "2025",
+    tags: ["Poster", "Branding", "Fashion"],
+    description: "Ignition is a conceptual high-end jewelry brand rooted in streetwear, gothic, and luxury aesthetics. Spanning three collections\u2014Chrome, Gold, and Obsidian\u2014each line is defined by a distinct visual identity captured through poster design. Every jewelry piece was designed using vector graphics, 3D modelling, and layered texturing to achieve a production-ready look.",
     links: {
       prototype: "",
       github: "",

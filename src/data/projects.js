@@ -41,7 +41,6 @@ const projects = [
     thumbnail: ignitionThumbnail,
     description: ignitionDes,
     route: "/ignition",
-    comingSoon: true,
   },
   {
     id: "deerlake",

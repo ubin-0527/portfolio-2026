@@ -1,8 +1,8 @@
-.dreamcreatives-page {
+.ignition-page {
   min-height: 100dvh;
   background: radial-gradient(ellipse at center, #ffffff 0%, #ebebeb 100%);
 }
 
-.dreamcreatives-page .overview-section__image {
+.ignition-page .overview-section__image {
   border-radius: 12px;
 }

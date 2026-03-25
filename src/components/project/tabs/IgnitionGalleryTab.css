@@ -1,0 +1,21 @@
+.ignition-gallery-tab {
+  width: 100vw;
+  padding: 80px 148px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.ignition-gallery-tab__images {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+}
+
+.ignition-gallery-tab__images img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

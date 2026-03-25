@@ -1,0 +1,17 @@
+.ignition-design-tab {
+  width: 100vw;
+  padding: 80px 148px 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.ignition-design-tab__subsections {
+  width: 100%;
+}
+
+.ignition-design-tab__subsections img {
+  display: block;
+  margin: 0 auto;
+}
