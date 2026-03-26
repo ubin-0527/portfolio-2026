@@ -4,6 +4,13 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  opacity: 0;
+  animation: contentFadeIn 0.8s ease-out 3.9s forwards;
+}
+
+@keyframes contentFadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0);    }
 }
 
 /* Same title style as OverviewSection */

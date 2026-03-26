@@ -1,6 +1,30 @@
 .ignition-page {
   min-height: 100dvh;
+  background: linear-gradient(180deg, #161718 0%, #000000 65%, #2A2B2C 100%);
+  background-attachment: fixed;
+  position: relative;
+  isolation: isolate;
+}
+
+.ignition-page::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 250vmax;
+  height: 250vmax;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
   background: radial-gradient(ellipse at center, #ffffff 0%, #ebebeb 100%);
+  z-index: -1;
+  filter: blur(300px);
+  pointer-events: none;
+  animation: bgCircleReveal 2s cubic-bezier(0.87, 0, 0.13, 1) 1.5s forwards;
+}
+
+@keyframes bgCircleReveal {
+  from { transform: translate(-50%, -50%) scale(0); }
+  to   { transform: translate(-50%, -50%) scale(1); }
 }
 
 .ignition-page .overview-section__image {
