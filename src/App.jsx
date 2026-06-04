@@ -12,6 +12,8 @@ import DreamCreatives from "./pages/DreamCreatives";
 import TwoAm from "./pages/TwoAm";
 import DeerLake from "./pages/DeerLake";
 import Ignition from "./pages/Ignition";
+import SummerProjects from "./pages/SummerProjects";
+import SummerProject from "./pages/SummerProject";
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
         <Route path="/2am"              element={<TwoAm />}           />
         <Route path="/deerlake"         element={<DeerLake />}        />
         <Route path="/ignition"         element={<Ignition />}        />
+        <Route path="/summer"           element={<SummerProjects />}  />
+        <Route path="/summer/:id"       element={<SummerProject />}   />
       </Routes>
     </Router>
   );

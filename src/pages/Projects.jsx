@@ -88,11 +88,13 @@ function Projects() {
 
       {/* Description */}
       <div className="projects-description">
-        <img
-          key={selected.id}
-          src={selected.description}
-          alt={`${selected.title} description`}
-        />
+        {selected.description && (
+          <img
+            key={selected.id}
+            src={selected.description}
+            alt={`${selected.title} description`}
+          />
+        )}
       </div>
 
     </div>

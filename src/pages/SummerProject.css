@@ -1,0 +1,27 @@
+.summer-sub-page {
+  min-height: 100dvh;
+  background: #F5F0EB;
+  padding: 120px 0 0;
+  box-sizing: border-box;
+}
+
+.summer-sub-page__images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.summer-sub-page__img {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+}
+
+.summer-sub-page__empty {
+  padding: 120px 0;
+  font-family: "American Typewriter", "Courier New", serif;
+  font-size: 18px;
+  color: #999;
+  text-align: center;
+}

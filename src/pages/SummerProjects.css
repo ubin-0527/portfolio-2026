@@ -1,0 +1,87 @@
+.summer-page {
+  min-height: 100dvh;
+  background: #F5F0EB;
+  padding: 120px 64px 80px;
+  box-sizing: border-box;
+}
+
+.summer-page__title {
+  font-family: "American Typewriter", "Courier New", serif;
+  font-size: 36px;
+  font-weight: 400;
+  color: #1a1a1a;
+  text-align: center;
+  margin: 0 0 80px;
+}
+
+/* Scattered layout matching the design */
+.summer-page__grid {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  min-height: 1800px;
+}
+
+.summer-page__item {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  text-align: left;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.summer-page__item:hover {
+  transform: scale(1.03);
+}
+
+/* Staggered positions matching the design mockup */
+.summer-page__item--nescafe {
+  top: 0;
+  left: 5%;
+  width: 280px;
+}
+
+.summer-page__item--absolut {
+  top: 80px;
+  right: 5%;
+  width: 280px;
+}
+
+.summer-page__item--bakery {
+  top: 700px;
+  left: 0;
+  width: 260px;
+}
+
+.summer-page__item--vinyl {
+  top: 620px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 260px;
+}
+
+.summer-page__item--vinyl:hover {
+  transform: translateX(-50%) scale(1.03);
+}
+
+.summer-page__item--botanical {
+  top: 1100px;
+  right: 0;
+  width: 280px;
+}
+
+.summer-page__thumb {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+}
+
+.summer-page__placeholder {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: #e0d8cf;
+  border-radius: 2px;
+}

@@ -8,6 +8,7 @@ import ignitionThumbnail  from "../assets/project/ignition-thumbnail.png";
 import ignitionDes        from "../assets/project/ignition-des.png";
 import amThumbnail        from "../assets/project/2am-thumbnail.png";
 import amDes              from "../assets/project/2am-des.png";
+import summerThumbnail    from "../assets/project/summer/spthumbnail.png";
 
 const projects = [
   {
@@ -49,6 +50,14 @@ const projects = [
     thumbnail: deerlakeThumbnail,
     description: deerlakeDes,
     route: "/deerlake",
+  },
+  {
+    id: "summer",
+    title: "Summer Projects",
+    category: "Graphic Design",
+    thumbnail: summerThumbnail,
+    description: null,
+    route: "/summer",
   },
 ];
 
